@@ -1,0 +1,152 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.virtualenv
+
+# Environment variables and secrets
+.env
+.env.*
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.yaml
+secrets.json
+credentials.json
+.secrets/
+config.local.*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Python distribution
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# uv specific
+.python-version
+uv.lock
+
+# DSPy specific
+dspy_cache/
+.dspy_cache/
+compiled_programs/
+*.dspy
+dspy_*.json
+
+# ML/AI artifacts
+models/
+checkpoints/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.ckpt
+*.safetensors
+wandb/
+mlruns/
+experiments/
+outputs/
+
+# Data files - IMPORTANT: exclude all data to prevent PII leaks
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.jsonl
+*.parquet
+*.arrow
+*.feather
+raw_data/
+processed_data/
+test_data/
+sample_data/
+
+# Exceptions for important config files (override *.json above)
+!package.json
+!tsconfig.json
+!pyproject.toml
+
+# Exclude sample outputs that might contain generated text
+output/
+results/
+reports/*.txt
+reports/*.md
+
+# Temporary and scratch files
+scratch/
+tmp/
+temp/
+*.tmp
+notes.txt
+todo.txt
+
+# Backup files
+*.bak
+*.backup
+*~.nib
+*.orig
