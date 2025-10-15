@@ -23,10 +23,6 @@ This project showcases how GEPA can optimize prompts for sensitive data de-ident
 This project uses [uv](https://github.com/astral-sh/uv) for dependency management.
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/dspy-gepa-deidentification.git
-cd dspy-gepa-deidentification
-
 # Install dependencies with uv
 uv sync
 
