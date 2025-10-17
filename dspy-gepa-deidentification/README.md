@@ -146,7 +146,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## License
 
-[MIT License](LICENSE) - Feel free to use this code for your own projects.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
