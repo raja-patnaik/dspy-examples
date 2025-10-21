@@ -32,6 +32,30 @@ Demonstrates using GEPA to automatically optimize prompts for redacting personal
 
 [View example →](./dspy-gepa-deidentification/)
 
+### 2. [Fact-Checked RAG](./dspy-fact-checker/)
+
+A self-correcting Retrieval-Augmented Generation system that fact-checks its own answers against Wikipedia sources and automatically refines responses until they are fully supported by evidence.
+
+**Key concepts:**
+- Self-correcting pipeline with dspy.Refine
+- Fact verification against retrieved context
+- Wikipedia integration for knowledge retrieval
+- Automatic retry and refinement
+
+[View example →](./dspy-fact-checker/)
+
+### 3. [Natural Language to SQL](./dspy-gepa-sql-generator/)
+
+Demonstrates using GEPA to optimize prompts for converting natural language questions into SQL queries, with comprehensive safety and correctness validation.
+
+**Key concepts:**
+- Natural language to SQL generation
+- Custom metrics for safety, execution, and correctness
+- Database schema understanding
+- Query optimization through GEPA
+
+[View example →](./dspy-gepa-sql-generator/)
+
 ## Getting Started
 
 Each example directory contains its own README with:
