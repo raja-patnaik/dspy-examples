@@ -1,0 +1,16 @@
+[project]
+name = "dspy-researcher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dspy>=3.0.3",
+    "exa-py>=1.16.1",
+    "gepa>=0.0.7",
+    "ipykernel>=7.0.1",
+    "langgraph>=1.0.1",
+    "litellm>=1.78.7",
+    "pydantic>=2.12.3",
+    "python-dateutil>=2.9.0.post0",
+]
