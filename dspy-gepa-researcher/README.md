@@ -44,7 +44,7 @@ The pipeline uses a graph-based workflow with the following stages:
 
 ```bash
 # Clone the repository
-cd dspy-researcher
+cd dspy-gepa-researcher
 
 # Install dependencies using uv (recommended)
 uv add install dspy langgraph exa-py python-dateutil pydantic
@@ -75,7 +75,7 @@ export RR_MAX_CHARS="12000"                                   # Max chars per so
 
 ```python
 import asyncio
-from dspy_researcher import run_pipeline, SectionSpec
+from dspy_gepa_researcher import run_pipeline, SectionSpec
 
 # Define your research sections
 sections = [
@@ -107,7 +107,7 @@ result = asyncio.run(run_pipeline(
 ### Running the Example
 
 ```bash
-uv run dspy_researcher.py
+uv run dspy_gepa_researcher.py
 ```
 
 This will generate a report on "State of Edge AI Acceleration (2024-2025)" with 5 sections.
@@ -195,8 +195,8 @@ The pipeline generates:
 ## Project Structure
 
 ```
-dspy-researcher/
-  dspy_researcher.py    # Main pipeline implementation
+dspy-gepa-researcher/
+  dspy_gepa_researcher.py    # Main pipeline implementation
   README.md             # This file
   report.md             # Generated output (after running)
   LICENSE               # MIT License
@@ -256,7 +256,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 If you use this project in your research, please cite:
 
 ```bibtex
-@software{dspy_researcher,
+@software{dspy_examples,
   title={DSPy Multi-Agent Research Pipeline},
   author={Your Name},
   year={2025},

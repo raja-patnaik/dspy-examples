@@ -168,7 +168,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 If you use this project in your research, please cite:
 
 ```bibtex
-@software{dspy_researcher,
+@software{dspy_examples,
   title={DSPy Multi-Agent Research Pipeline},
   author={Your Name},
   year={2025},
