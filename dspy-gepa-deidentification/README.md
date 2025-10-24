@@ -155,3 +155,16 @@ Built with [DSPy](https://github.com/stanfordnlp/dspy) by Stanford NLP and [GEPA
 ---
 
 **Disclaimer**: This is a demonstration project for educational purposes. Always validate and test thoroughly before using in production environments with sensitive data.
+
+## Citation
+
+If you use this project in your research, please cite:
+
+```bibtex
+@software{dspy_researcher,
+  title={DSPy Multi-Agent Research Pipeline},
+  author={Your Name},
+  year={2025},
+  url={https://github.com/raja-patnaik/dspy-examples}
+}
+```
