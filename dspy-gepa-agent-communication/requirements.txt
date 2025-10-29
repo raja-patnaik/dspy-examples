@@ -1,0 +1,12 @@
+# DSPy + GEPA: Optimizing Inter-Agent Communication Protocols
+# Requirements
+
+# Core dependencies
+dspy>=2.5.0
+pydantic>=2.0.0
+
+# Optional: For alternative LLM providers
+# openai>=1.0.0
+# anthropic>=0.18.0
+
+# Python 3.10+ required

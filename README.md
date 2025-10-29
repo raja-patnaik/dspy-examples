@@ -56,6 +56,35 @@ Demonstrates using GEPA to optimize prompts for converting natural language ques
 
 [View example →](./dspy-gepa-sql-generator/)
 
+### 4. [Multi-Agent Research Pipeline](./dspy-gepa-researcher/)
+
+An intelligent, multi-agent research pipeline that autonomously conducts web research and generates comprehensive, citation-backed reports using DSPy, LangGraph, and the Exa search API.
+
+**Key concepts:**
+- Multi-agent architecture with LangGraph
+- Coordinated agents for query planning, search, summarization, writing, and review
+- Smart web research powered by Exa API
+- Automated writing with proper citations
+- Iterative research with gap analysis
+
+[View example →](./dspy-gepa-researcher/)
+
+### 5. [Optimizing Inter-Agent Communication](./dspy-gepa-agent-communication/) ⭐ NEW
+
+A groundbreaking example that optimizes **how agents communicate with each other**, not just individual task performance. Uses DSPy + GEPA + MAST (Multi-Agent System Failure Taxonomy) to discover emergent communication conventions.
+
+**Key concepts:**
+- Communication protocols as optimizable DSPy signatures
+- MAST taxonomy for identifying where communication breaks down
+- Model assertions for real-time quality monitoring
+- GEPA optimization of dialogue structure and information exchange
+- Emergent communication patterns discovered through optimization
+
+**Why this is novel:**
+Unlike traditional approaches that optimize individual agent prompts, this optimizes the *language* agents use to communicate. Metrics measure communication quality (clarity, completeness, routing accuracy) rather than task accuracy. The result: emergent communication conventions that humans wouldn't manually design.
+
+[View example →](./dspy-gepa-agent-communication/)
+
 ## Getting Started
 
 Each example directory contains its own README with:
