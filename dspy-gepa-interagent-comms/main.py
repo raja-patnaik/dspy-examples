@@ -1,4 +1,4 @@
-# research_agents_gepa.py
+# research_agents_gepa.p
 # A minimal multi-agent research assistant with DSPy + GEPA optimizing
 # inter-agent communication protocols (routing + request + update).
 #
@@ -8,7 +8,7 @@
 # Optional: set PRIMARY_MODEL / REFLECTION_MODEL (defaults below).
 
 import os, json, math, re, random, statistics
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, NamedTuple
 
 import dspy
 
@@ -341,6 +341,15 @@ BETA_TOKENS   = 0.0006     # penalty per token (approx chars/4)
 GAMMA_TURNS   = 0.03       # penalty per message turn
 DELTA_ROUTE   = 0.25       # bonus for correct routing
 
+class FeedbackResult(NamedTuple):
+    """Result structure for GEPA metric feedback.
+
+    NamedTuple supports both dict-style (fb["score"]) and
+    attribute-style (fb.score) access for compatibility.
+    """
+    score: float
+    feedback: str
+
 def _evaluate_pred(gold: dspy.Example, pred: dspy.Prediction) -> Dict[str, Any]:
     # success
     ans = (getattr(pred, "final_answer", "") or "").lower()
@@ -392,7 +401,10 @@ def gepa_metric(
 
     # GEPA expects {'score': float, 'feedback': str} at the predictor level.
     if pred_name is not None:
-        return {"score": float(score), "feedback": "\n".join(fb_lines) or f"score={score:.3f}"}
+        return FeedbackResult(
+            score=float(score),
+            feedback="\n".join(fb_lines) or f"score={score:.3f}"
+        )
     # For regular Evaluate (no component-level optimization), return scalar.
     return float(score)
 
