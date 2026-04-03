@@ -1,0 +1,9 @@
+[project]
+name = "dspy-gepa-debate"
+version = "0.1.0"
+description = "Multi-Agent Adversarial Debate System with GEPA optimization"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dspy>=3.1.3",
+]
