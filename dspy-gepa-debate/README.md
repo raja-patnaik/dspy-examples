@@ -1,6 +1,6 @@
 # Multi-Agent Adversarial Debate with GEPA
 
-A DSPy example that demonstrates **GEPA optimizing adversarial multi-agent dynamics** — something not shown in any other prompt optimization demo.
+A DSPy example that demonstrates **GEPA optimizing adversarial multi-agent dynamics**.
 
 Three agents debate a topic over two rounds:
 - **PRO Advocate** — argues in favor of the proposition

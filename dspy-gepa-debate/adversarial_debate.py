@@ -515,7 +515,8 @@ def main():
     print("\n--- Optimizing with GEPA ---")
     optimizer = dspy.GEPA(
         metric=debate_metric,
-        auto="light",
+        # auto="light",
+        max_full_evals=12,
         reflection_lm=reflect_lm,
         num_threads=8,
         track_stats=True,
